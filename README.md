@@ -1,7 +1,7 @@
 Java Homework 
 =======
 >
-> ### Kingsborough Community College
+> ### [Kingsborough Community College](http://www.kingsborough.edu)
 > **Introduction To Computer Programming: CP500 - Java 1**
 >
 > Textbook:     Building Java Programs *A Back To Basics Approach* 4th Edition\
@@ -15,5 +15,8 @@ I'm creating this site to share my work with my fellow students. I'm trying to l
 
 ###### THINGS TO DO
 - [x] figure out how to write markdown to fix this README file
-- [ ] Complete the GPA Calculator :briefcase:
+- [ ] Complete the GPA Calculator :computer:
 - [ ] Include my test dir and my ruby code
+
+
+
