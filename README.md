@@ -1,7 +1,8 @@
 Java Homework 
 =======
-### Kingsborough Community College
-**Introduction To Computer Programming: CP500 - Java 1**
+>
+> ### Kingsborough Community College
+> **Introduction To Computer Programming: CP500 - Java 1**
 >
 > Textbook: Building Java Programs *A Back To Basics Approach* 4th Edition\
 > Stuart Reges & Marty Stepp
