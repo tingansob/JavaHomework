@@ -1,11 +1,11 @@
 import java.util.*; // Import java utilities 
 
 /*
- * Author:      Kevin George Rusty
- * Professor:   Eileen Lichtenthal
- * Class:       Introduction to Computer Programming - CP 500 02[3995]
- * Textbook:    Building Java Programs: A Back to Basics Approach. 4th Edition
- * Date::       Sun Oct 22 09:10:03 
+ * Author:
+ * Professor:
+ * Class:   
+ * Textbook:
+ * Date::  
  * 
  * Assignment:  
  *
@@ -13,21 +13,21 @@ import java.util.*; // Import java utilities
 
 public class Template   // Application name
 { 
-    public static void main(String[] args) // Beginning of main
+    public static void main(String[] args) // Beginning of main method
     {
         helloWorld();
 
 	} // END main
 
-    public static void helloWorld()
+    public static void helloWorld() // Beginning of the helloWorld method
     {
         System.out.println("\nHello World!\n");
 
     } // END helloWorld
 
-} // End of app
+} // End of application
 
 /*
- * email: tingansob@gmail.com
- * kevin.rusty33@students.kingsborough.cuny.edu
+ * email:
+ *
 */
