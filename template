@@ -1,34 +1,65 @@
 import java.util.*; // Import java utilities 
 
 /*
+ * Table of Contents
+ *
  * Author:
+ * Textbook:
  * Professor:
  * Class:   
- * Textbook:
+ * email:
  * Date::  
  * 
  * Assignment:  
  *
 */
 
-public class Template   // Application name
-{ 
-    public static void main(String[] args) // Beginning of main method
-    {
+public class Template { 
+
+// CLASS VARIABLES
+// -------------------------------------------------------------
+
+    public static final String myName = "Kevin George Rusty";
+
+
+
+// MAIN
+// -------------------------------------------------------------
+
+    public static void main(String[] args) {
         helloWorld();
-        System.out.println("\t// TODO code application logic here");
+	}
 
-	} // END main
 
-    public static void helloWorld() // Beginning of the helloWorld method
+
+// METHODS
+// -------------------------------------------------------------
+
+    public static void helloWorld() 
     {
-        System.out.println("\nHello World!\n");
+        System.out.println("Welcome home "+ myName);
+    }
+}
 
-    } // END helloWorld
-
-} // End of application
 
 /*
- * email:
- *
+   APPENDIX
+   -------------------------------------------------------------
+
+
+    Briefing Title
+
+    Customer: 
+    Champ: 
+    Date:
+
+    Situation
+    Purpose 
+    Road Map 
+    Goals 
+    General Goals 
+    Project Related Goals 
+    Scope 
+    Success Criteria 
+
 */
