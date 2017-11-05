@@ -74,8 +74,42 @@ public class Designing
     public static final int TEST = 10;
 // END CLASS VARIABLES  
 /*
+ * MAIN
+ */
+    public static void main(String[] args) 
+    {
+        /*
+        greeting();
+        printBoxes();
+        hourglass();
+        */
+        shadowPyramid();
+        printPyramid();
+        printBottom();
+    }// END MAIN
+/*
  * METHODS
  */
+/*
+ * shadowPyramid()
+ */
+    public static void shadowPyramid() 
+    {
+        // local varaibles
+        int i, j, k, width = 8;
+
+        for (i = 1; i <= SUB_HEIGHT; i++ ) {
+            System.out.print("|");
+            for (j = i; j <= SUB_HEIGHT; j++) {
+                System.out.print("-"); }
+            for (k = 1; k < (i * 2); k++) {
+                System.out.print("*"); }
+            for (j = SUB_HEIGHT; j >= i; j--) {
+                System.out.print("-"); }
+        //  System.out.println();
+            System.out.println("|");
+        }
+    } // END shadowPyramid
 /*
  * printPyramid
  */
@@ -187,14 +221,4 @@ public class Designing
     }
 // END printBoxes
 // END METHODS
-/*
- * MAIN
- */
-    public static void main(String[] args) 
-    {
-        greeting();
-        printPyramid();
-        printBoxes();
-        hourglass();
-    }// END MAIN
 }// END Designing
