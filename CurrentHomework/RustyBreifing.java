@@ -1,37 +1,44 @@
 import java.util.*;
 
 /*                                  
+ * Briefing
+ *
  * Thu Nov  2 17:43:50 EDT 2017     
- *                                */
-
-//                                                   
-// Name and introduction - see briefing in appendix. 
-//                                                   
+ *
+ *
+ * Name and introduction - see briefing in appendix. 
+ *
+ */
 
 public class RustyBreifing {
     
-    //
-    // Class Variables     
-    //
-
+/*
+ * constants
+ */
     public static final String myName="George";
-
+// END constants
     public static void main(String[] args) {
         security();
         welcome();
 
     }
+/*
+ * security
+ */
     public static void security() {
         System.out.println("I'd love to have some sort of security here.");
         System.out.println("There was that loop that checked for user ID!!!");
         System.out.println();
 
-    }
+    } // END security
+/*
+ * welcome
+ */
     public static void welcome() {
         System.out.println("Hello "+myName);
         System.out.println("I should be able to write loops naturally.");
         System.out.println("'She said you would be there for me.'");
-    }
+    } // END WELCOME
 }
 
 
@@ -39,9 +46,9 @@ public class RustyBreifing {
 /*
 Briefing Title
 
-Customer: 
-Champ: 
-Date:
+Customer:   WEMEUS                          
+Champ:      Kevin George Rusty              
+Date:       Fri Nov  3 13:33:16 EDT 2017    
 
 Situation - Facts and figures. Verifiable. Style: Wikipedia. What is the state you are currently in? What do others need to know to get "the big picture?"
 
@@ -58,4 +65,17 @@ Project Related Goals - Why are you coming to me? What part of the general goals
 Scope - What are the parts of the cycle. What is the expected minimal scope? What resources (money, manpower, Online Tools) is the customer ready to make available (not including BrainStore's part). What are the deadlines?
 
 Success Criteria - How do we measure the projects success. Only measurable parameters.
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
