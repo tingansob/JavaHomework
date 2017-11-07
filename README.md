@@ -11,12 +11,16 @@ Java Homework
 >
 
 Hello World,\
-I'm creating this site to share my work with my fellow students. I'm trying to learn programming so that I can augment my skills as a System Administrator. If you stop by and read this leave me some notes...I'd love to hear from you. \
+I'm creating this site to share my work with my fellow students. I'm trying to learn programming so that I can augment my skills as a System Administrator. If you stop by and read this leave me some notes...I'd love to hear from you. 
 
 ###### THINGS TO DO
 - [x] figure out how to write markdown to fix this README file
-- [ ] Complete the GPA Calculator :computer:
-- [ ] Include my test dir and my ruby code
+- [x] Include my test dir and my ruby code
+- [ ] Orgaize files with better names that reference chapter titles and numbers
+- [ ] Become proficient in manipulating control structures
+- [ ] Go out to celebrate at the end of the week!
 
 
-
+----
+> **Dev sites**
+> - [Code Step By Step](http://www.codestepbystep.com)
