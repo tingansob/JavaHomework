@@ -67,7 +67,7 @@ public class Designing
  * VARIABLES
  */
     public static final String NAME = "George";
-    public static final int SUB_HEIGHT = 5;
+    public static final int SUB_HEIGHT = 8;
     public static final int BOX_WIDTH = SUB_HEIGHT*2;
     public static final int HEIGHT = BOX_WIDTH/2-1;
     public static final int PYRAMID = SUB_HEIGHT+1;
@@ -78,11 +78,9 @@ public class Designing
  */
     public static void main(String[] args) 
     {
-        /*
         greeting();
         printBoxes();
         hourglass();
-        */
         shadowPyramid();
         printPyramid();
         printBottom();

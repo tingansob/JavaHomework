@@ -24,19 +24,51 @@ import java.util.*;
 
 public class PythonsGifts {
 /*
- * constants
+ * variables 
  */
     public static final int WIDTH = 3;
     public static final int HEIGHT = WIDTH/2;
 // end constants 
 /*
- * BEGIN MAIN 
+ * MAIN 
  */
     public static void main(String[] args) 
     {
-        greeting();
+//        greeting();
         tableOfContents();
+        System.out.println();
+        looping();
     } // END MAIN
+
+/*
+ * METHODS
+ */
+/*
+ * loopIncrement
+ * I want to have this loop increment on one half and decrement on the other
+ */
+    public static void looping()
+    {
+        int i, j, k, m, width=19;
+
+        for (i = 1; i <= width; i++) {
+            System.out.print("|");
+            for (j = i; j < width; j++) {
+                System.out.print("~"); }
+            for (k = 1; k < (i *2); k++) {
+                System.out.print("^"); }
+            for (m = width; m >= i; m--) {
+                System.out.print("~"); }
+            /*
+            for (j = i; j > width; j--) {
+                System.out.print("~"); }
+            for (k = 1; k > (i * 2); k--)
+            */
+            System.out.println("|");
+        }
+    } // END looping
+
+
 /*
  * greeting
  */
@@ -64,4 +96,5 @@ public class PythonsGifts {
             }
         }
     } // END tableOfContents -----------------------------------------
+
 } // END PythonGifts

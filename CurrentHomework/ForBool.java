@@ -6,8 +6,10 @@ public class ForBool
     public static void main(String[] args)
     {
         testBool();
+        System.out.println(345 / 10 / 3 * 55 / 5 / 6 + 10 / (5 / 2.0));
     }
 
+// METHODS
     public static void testBool() {
         System.out.print("+");
         for (int i = 0; i ==(TEST_NUMBER % 2); i++) {
