@@ -1,0 +1,1 @@
+for homework - -4*(row+1) + (size *4) +2
