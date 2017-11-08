@@ -26,3 +26,4 @@ I'm creating this site to share my work with my fellow students. I'm trying to l
 
 Today's homework:
 ![screenshot](CurrentHomework/ss_01.png)
+
