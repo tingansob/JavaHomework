@@ -25,4 +25,4 @@ I'm creating this site to share my work with my fellow students. I'm trying to l
 > - [Code Step By Step](http://www.codestepbystep.com)
 
 Today's homework:
-![screenshot](/JavaHomework/CurrentHomework/ss_01.png)
+![screenshot](CurrentHomework/ss_01.png)
