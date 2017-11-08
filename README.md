@@ -20,11 +20,9 @@ I'm creating this site to share my work with my fellow students. I'm trying to l
 - [ ] Become proficient in manipulating control structures
 - [ ] Go out to celebrate at the end of the week!
 
-
 ----
 > **Dev sites**
 > - [Code Step By Step](http://www.codestepbystep.com)
 
 Today's homework:
 ![screenshot](https://github.com/tingansob/JavaHomework/CurrentHomework/ss_01.png)
-[[https://github.com/tingansob/JavaHomework/CurrentHomework/ss_01.png|alt=screenshot]]
