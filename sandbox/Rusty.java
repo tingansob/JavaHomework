@@ -9,19 +9,27 @@ import java.util.*;
 /*
  * MAIN
  */
-public class Loops
+public class Rusty
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         helloWorld();
         loop01();
 
-}
+    }
 // END main
 
-    public static void helloWorld() 
+    public static void helloWorld()
     {
         System.out.println("\nHello World!\n");
+        for (int i=1; i<=5;i++)
+        {
+            for (int j=5;j>=i; j-- )
+            {
+              System.out.print("# ");
+            }
+            System.out.println();
+        }
 
     } // END helloWorld
 
