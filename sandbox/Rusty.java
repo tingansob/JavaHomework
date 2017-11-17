@@ -1,36 +1,50 @@
-import java.util.*;
+/* Created by tingansob on 11/10/2017 at 08:00:40 AM */
+import java.util.*; 
+public class Rusty { 
+    /* constants */
 
-/*
- * Created by tingansob on 11/06/2017 at 06:00:44 PM
- * Assignment:  Master Loops
- *
-*/
+        public static final String NAME = "Kevin";
+        public static final int COUNT = 19;
 
-/*
- * MAIN
- */
-public class Rusty
-{
+    // end constants
+
+
+/* main */
+
     public static void main(String[] args)
     {
-        helloWorld();
-        loop01();
+        //helloWorld();
+        printSum();
+    } 
 
-    }
-// END main
+// end main
+
+
+/* methods */
 
     public static void helloWorld()
     {
-        System.out.println("\nHello World!\n");
-        for (int i=1; i<=5;i++)
+        System.out.println("\nHello "+NAME+"\n");
+    }
+
+
+    public static void printSum()
+    {
+        int i, j, k, m = 10;
+        for (i=COUNT-2; i>=0; i--)
         {
-            for (int j=5;j>=i; j-- )
-            {
-              System.out.print("# ");
-            }
-            System.out.println();
+            System.out.println(i);
         }
+        for (i=1; i<=COUNT*2; i++)
+        {
+            System.out.print(".");
+        }
+        System.out.println();
+        for (i=COUNT/2; i>=0; i--)
+        {
+            System.out.println(i);
+        }
+    }
+// end methods
 
-    } // END helloWorld
-
-} // End of application
+} // end rusty

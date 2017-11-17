@@ -19,8 +19,7 @@ public class ShadowV
     public static final char DOTU = '\u22EE'; 
     public static final char DOTD = '\u22EF'; 
 
-    public static final int ROW = 5; 
-    public static final int SIZE = 7; 
+    public static final int SIZE = 9; 
     
 
     
@@ -31,7 +30,7 @@ public class ShadowV
         System.out.println();
         looping();
         System.out.println();
-        System.out.println();
+        loop2();
     }
 
     public static void greeting() 
@@ -56,7 +55,7 @@ public class ShadowV
                 System.out.print(DOTF+""+DNRT);
 
             }
-            for (int j=1; j<=i*2-1; j++)
+            for (int j=z+2; j<=i*2; j++)
             {
                 System.out.print(FIVER);
             }
@@ -71,25 +70,37 @@ public class ShadowV
             System.out.print(DOTU+""+ARROW2+" "+DOTD+TIME+DOTD+" |");
             for (int j=SIZE; j>=i; j--)
             {
-                System.out.print("/"+DNLF);
+                System.out.print(DNLF+"/");
 
             }
-            for (int j=1; j<=i*2-1; j++)
+            for (int j=1; j<=(i*2-1); j++)
             {
-                System.out.print(RECYCLE);
+                System.out.print("^");
             }
             for (int j=z ; j<i*2-2; j++)
             {
-                System.out.print(RECYCLE);
+                System.out.print("^");
             }
             for (int j=SIZE; j>=i; j--)
             {
-                System.out.print(DNRT+"\\");
+                System.out.print("\\"+DNRT);
             }
         System.out.print("|");
         System.out.println();
         }
     }
+        public static void loop2()
+        {
+            for (int i=1; i<=SIZE; i++)
+            {
+                for (int j=1; j<i; j++)
+                {
+                    System.out.print(" ");
+                }
+                System.out.println(ARROW+" "+i);
+            }
+        }
+    
 
 } // ShadowV _EOF_
 

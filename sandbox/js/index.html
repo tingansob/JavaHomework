@@ -1,29 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE=html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <!-- meta http-equiv="refresh" content="3"-->
+<style type="text/css">
+	canvas{border: red 1px dotted;}
+</style>
     <title>Testing JavaScript</title>
+
 </head>
 <body>
-    <p>Hello World</p>
-<script language="javascript">
-    alert ("Hello Kevin...you've generated an alert....");
+    <div id="container">
+        <h1>Testing JavaScript</h1>
+    </div>
+<pre>
+I do not enlighten those who are not eager to learn, nor arouse
+those who are not anxious to give an explanation themselves.
+If I have presented one corner of the square and they cannot
+come back to me with the other three, I should not go over
+the points again.
+—Confucius
+</pre>
 
-    alert ("This is what's going on over here.");
-    var a=confirm("Good Bye!!")
+<button onclick="draw(0, 0)">Draw</button>
+<canvas id="canvas" width="250" height="200"></canvas>
 
-    if (true)
-        document.write("Pressed OK");
-        else
-        document.write("Pressed Cancel");
-        document.close(); 
-</script>
-    
-<canvas id="clock" width="100" width="100" style="border 8px solid black">
-    The current time is: 4:41 PM
-</canvas>
-<script>
-    
+<br />
+<h2>Form</h2>
+    <form>
+        Width: <br />
+        <input type="number" id="width"><br />
+        <br />Height: <br />
+        <input type="number" id="height"><br />
+        <br />
+        <input type="button" onclick="calc()" value="Get Area">
+        <input type="text" id="answer" size="8px">
+</form>
+
+
+<script lang="javascript" type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>
