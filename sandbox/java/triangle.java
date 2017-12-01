@@ -10,73 +10,62 @@ public class triangle {
         b=getValues(in, 2);
         c=getValues(in, 3);
         
-        evaluate(a, b, c);
+        if (a<=0 || b<=0 || c<=0) {                            // testing for <=0
+            System.out.println("\n\tInvalid data was entered.\n");   // if true exit
+        } 
+        else if (a+b>c && b+c>a && a+c>b) {
+            typeOfTriangle(a, b, c);
+            check4RightAngle(a, b, c);
+            System.out.println("Area: "+area(a, b, c));
 
-    }
+        } 
+        else 
+        {
+            System.out.println("Not sides of a triangle");
+        } 
+        // System.out.println("Done");
+
+    } // end main
 
     public static void instructions() {
         System.out.println("\n\tWelcome to the triangle problem.\n");
-    }
+    } // end instructions
 
     public static int getValues(Scanner in, int count) {
         int value;
         System.out.print("Enter number "+count+" => ");
         value=in.nextInt();
         return value;
-    }
+    } // end getValues
 
     public static void evaluate(int a, int b, int c) {
-        if (a <= 0) {
-            System.out.println("Bad Info - BYE");
-            bye();
+            int sum=a+b+c;
+            System.out.println("Good Job Sum = " +sum);
+    } // end evaluate
+
+    public static void typeOfTriangle(int a, int b, int c) {
+        if (a!=b && b!=c && c!=a) {
+            System.out.println("No sides equal - scalene");
+        } else if (a==b && b==c) {
+            System.out.println("Three sides equal - equlilateral");
+        } else if (a==b || b==c || a==c) {
+            System.out.println("Two sides equal - isoceles");
         }
-        if (b <= 0) {
-            System.out.println("Bad Info - BYE");
-        }
-        if (c <= 0) {
-            System.out.println("Bad Info - BYE");
-        }
-        System.out.println("Good Job");
+    } // end method
+
+    public static void check4RightAngle(int a, int b, int c) {
+        if (Math.pow(a,2)+Math.pow(b,2)==Math.pow(c,2)) {
+            System.out.println("This is a right triangle.");
+        } else 
+            System.out.println("This is not a right triangle.");
     }
 
-    public static void bye()
-    {
-        System.out.println("Good Bye");
-    }
+    public static double area(double a, double b, double c) {
+        double p, area;
+        p = (a+b+c)/2;
+        area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        return area;
 
-    public static void typeOfTriangle() {
-        /* 
-         * Based on matching lengths, what type of triangle is this
-         * equilateral triangle has all 3 matching sides
-         * Isosceles triangle has 2 matching sides
-         * Scalene triange has no mathcing sides
-         */
-    }
-
-    public static void proveShapeIsATriangle() {
-        /*
-         * calculate side lengths to make sure this is actually a triangle
-         - triangle inequality theorm
-         
-           a + b > c
-           b + c > a
-           a + c > b
-
-           all 3 must be true for a, b, c to be a triangle
-          
-         */
-    }
-
-    public static void check4RightAngle() {
-        /*
-         Check for right triangle
-
-          a^2 + b^2 = c^2
-
-         */
-    }
-
-    public static void area() {
         /*
 
            Calculate area

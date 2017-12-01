@@ -1,0 +1,43 @@
+Posted on: Thursday, November 30, 2017 6:00:00 AM EST
+Choose the project you would like to do.
+
+Honors must do both, 1 main program, which has 2 calls, 1 to each assignment.
+
+Any non HEC student that does both, as outlined above, will receive extra credit
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Write a JAVA program that will implement a
+computerized voting system that functions like the output sample.
+In a loop, which will go on forever unless the secret administrative code of ‘5’ is entered, you must:
+Print the candidate menu.
+Wait for input.
+If the input is a valid choice bump up the tally of the selected candidate, bump up the tally of total votes cast, print “VOTED”, and return to the menu.
+If someone types anything other than 1-5 print out: “***ERROR***invalid entry”, bump up no tally, and go back to the menu.
+When the administrative code ‘5’ is entered and you have exited the loop, print out the total number of votes cast and then show the number of votes for each candidate.
+For extra credit, after the FINAL TALLY is printed, print out who the winner is.
+For extra extra credit take into account ties.
+
+These input values are samples only. Obviously.
+When the (secret) code of ‘5’ is entered the election is over
+
+must use do or while loop. name it evote, nothing beyond chapter 5
+
+evote.txt 
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Suppose a keypad on a commercial convection oven is used to enter a desired baking temperature and is arranged like the digits on a phone.       
+                                                               1 2 3
+                                                               4 5 6
+                                                               7 8 9
+                                                                  0
+ Unfortunately, the circuitry is damaged and the digits in the leftmost column no longer function. In other words, the digits 1, 4, and 7 do not work. If a recipe calls for a temperature that can’t be entered, then you would like to substitute a temperature that can be entered.
+
+Write a program that inputs a desired temperature. The temperature must be between 0 and 999 degrees.
+
+If the desired temperature does not contain 1, 4, or 7, then output the desired temperature. Otherwise, compute the next largest and the next smallest temperature that does not contain 1, 4, or 7 and output both.
+
+ Keep doing this until a sentinel of 0 is entered. –the first temperature entered could be a sentinel, however the sentinel will not be entered after an invalid temperature (must be a good temperature between an invalid temperature and the sentinel)
+
+name your file badKeyBoard (or it will not be graded) use nothing beyond chapter 5
