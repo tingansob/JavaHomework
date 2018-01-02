@@ -1,0 +1,38 @@
+body {
+    background-color: linen;
+    font-family: 'Bungee', cursive;
+    font-family: 'Risque', cursive;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    color: darkgray;
+}
+
+h1 {
+    color: darkgray;
+    font-family: 'Bungee', cursive;
+}
+
+canvas {
+    border: 2px dotted sandybrown;
+}
+
+#imagine {
+    fill: aqua;
+
+}
+
+.logo .mono {
+        fill: goldenrod;
+}
+
+.logo .bobo {
+    fill: antiquewhite;
+}
+
+#rusty {
+    padding: 20px;
+    border: 1px solid tan;
+}
+

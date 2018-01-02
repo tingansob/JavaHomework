@@ -1,0 +1,12 @@
+body {
+  background: goldenrod;
+  font-family: "liberation Sans", font-awesome;
+}
+
+h1, h2 {
+    font-family: "Liberation Sans Narrow";
+}
+
+#title {
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+body {
+    margin:0;
+    padding:0;
+    background: #AFA;
+}
+
+#container {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    border: 1px dotted #FFF;
+}
+
+p.second {
+    text-transform: uppercase;
+}
+
+#lights {
+    background: #0A0;
+    border: 11px double yellow;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 50px;
+    font-family: Ubuntu;
+    color: #AFA;
+
+}

@@ -1,9 +1,7 @@
-package main
+package helloWorld
 
 import "fmt"
 
-func main() {
-    fmt.Println("Hello world.")
-    fmt.Printf("A printf line without a carriage return\n")
+func helloWorld() {
+	fmt.Println("Hello world.\n")
 }
-

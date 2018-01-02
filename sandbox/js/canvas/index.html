@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Canvas</title>
+    <!-- -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../../css/firstCanvas.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Lato|Risque" rel="stylesheet"> 
+</head>
+<body>
+
+    <h1>FreeDome is comming...</h1>
+    <p>Kevin George Rusty</p>
+
+    <!-- Make sure to include comments -->
+    <!-- First svg circle drawn directly on page -->
+    <svg id="imagine" width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="darkgrey" stroke-width="4" fill="tan" />
+    </svg>
+    <div id="rusty">
+
+
+    <!--Squares on page -->
+  <svg class="logo" width="200" height="200" viewBox="0 0 400 400">
+  <rect class="mono" x="0" y="0" width="400" height="400" fill="#56A0D3" />
+  <rect class="bobo" x="50" y="50" width="300" height="300" fill="#ffffff" />
+  <rect class="mono" x="100" y="100" width="200" height="200" fill="#56A0D3" />
+  <rect class="bobo" x="150" y="150" width="100" height="100" fill="#fff" />
+</svg> 
+</div>
+
+    <canvas id="firstCanvas"></canvas>
+
+
+    <script src="main.js"></script>
+    <script src="../firstCanvas.js"></script>
+</body>
+</html>

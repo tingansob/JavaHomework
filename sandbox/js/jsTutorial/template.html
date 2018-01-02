@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to JavaScript</title>
+	<script type="text/javascript">
+		function sibstitute() {
+			var myValue = document.getElementById('myTextBox').value;
+			
+			if (myValue.length == 0) {
+				alert('Please enter a real value');
+				return;
+			}
+			var myTitle = document.getElementById('title');
+			myTitle.innerHTML = myValue;	
+
+		}
+	</script>
+</head>
+<body>
+    <h1 id="title">Introduction To JavaScript</h1>
+
+<input type="text" id="myTextBox" />
+<input type="submit" value="Click me" onclick="sibstitute()" />
+</body>
+</html>
