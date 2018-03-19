@@ -29,15 +29,18 @@ Remember:
 
 */
 import java.util.*;
-public class Assignment1 {
+public class Assignment1a {
     public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
         // variables
-        String empl="Rusty Lee";
+        int again=0;
+        while (again==0) {
+        String empl=userID(in);
 
-        int dependents=3;
+        int dependents=numDepend(in);
 
         double rate=18.28,
-               tHrs=50,
+               tHrs=workWeek(in),
                otRate=rate+(rate/2),
                GROSS=grossPay(tHrs,rate,otRate),
                // witholdings
@@ -82,7 +85,22 @@ public class Assignment1 {
         System.out.printf("%26s  $%7.2f\n","Total Net Pay:",NET);
 
         space(3);
+        again=goAgain(in);
+        in.nextLine();
+        
+        } 
     } // END main
+
+
+
+
+
+
+
+
+
+
+
 
     public static double grossPay(double hrs, double rate, double otRate) {
         double grossPay;
@@ -105,26 +123,40 @@ public class Assignment1 {
 
         return netPay;
     } //END netPay
+
+    public static int workWeek(Scanner in) {
+        int hrsWorked=0;
+        do {
+            System.out.print("How many hours worked this week? ");
+            hrsWorked=in.nextInt();
+        } while (hrsWorked>=0&&hrsWorked>168);
+        return hrsWorked;
+    }
     
-
-    public static void space() {
-        System.out.println();
+    public static String userID(Scanner in) {
+        spacer();
+        spacerTally();
+        System.out.print("\nEnter the employees name ");
+        return in.nextLine();
     }
 
-    public static void space(int a) {
-        for (int i=1;i<=a;i++)
-            System.out.println();
+    public static int numDepend(Scanner in) {
+        System.out.print("How many dependents? ");
+        return in.nextInt();
     }
 
-    public static void spacer() {
-        for (int i=0;i<=40;i++) {
-            System.out.print("-");
-        }space();
+    public static int goAgain(Scanner in) {
+        spacer();
+        System.out.print(" - 0 - to continue\n - 1 - to exit\nContinue? -----> ");
+        int answer=in.nextInt();
+        return answer;
+
+
     }
 
-    public static void spacerTally() {
-        for (int i=0;i<=40;i++) {
-            System.out.print("=");
-        }space();
-    }
+    // layout and formatting
+    public static void space() { System.out.println(); }
+    public static void space(int a) { for (int i=1;i<=a;i++) System.out.println(); }
+    public static void spacer() { for (int i=0;i<=40;i++) { System.out.print("-"); }space(); }
+    public static void spacerTally() { for (int i=0;i<=40;i++) { System.out.print("="); }space(); }
 }// END Assignment1 _EOF_
