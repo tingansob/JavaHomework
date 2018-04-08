@@ -12,7 +12,7 @@ public class arrayTesting {
        // String name=greeting(in);
        int [] amounts = new int[sizeOfArray];
 
-       for (int i=0;i<amounts[sizeOfArray];i++){
+       for (int i=0;i<amounts.length;i++){
            System.out.println(amounts[i]);
        }
 
