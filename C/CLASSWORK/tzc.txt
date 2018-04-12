@@ -1,0 +1,15 @@
+temp conversion
+
+1 f to c
+2 c to f
+3 quit 
+func f-c 
+func c-f 
+
+
+tzc2
+in main 
+degrees? 
+is that for c or f (get char)
+if f func f-c
+
