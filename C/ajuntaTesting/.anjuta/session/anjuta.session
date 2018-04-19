@@ -1,15 +1,15 @@
 [Anjuta]
 Geometry=976x748+455+66
 
-[Execution]
-Run in terminal=2
-Working directories=../../.
-
 [File Loader]
-Files=../../src/main.cc#1
+Files=../../src/main.cc#26
 
 [Document Manager]
 bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
+
+[Execution]
+Run in terminal=2
+Working directories=../../.
 
 [Project Manager]
 Shortcut=ajuntaTesting//src//foobar_cpp

@@ -1,0 +1,11 @@
+I was playing around with the code and have some questions.
+
+In java Scanner class we have various ways to input data {nextInt(), nextLine(), next();}
+
+It seems that cin automatically identifies the data type from the user input. In the app we created today the patient.name seems to allow for "next()" only taking up to the first whitespace.
+
+I tried to enter a first/last name into the cin>>regPat[Pindex].name; and it seems to break the app. What is the way in c++ to specify what the user input should be? I noticed that you started the app with a fname/lname var's that you changed. Was this to address the whitespace issue?
+
+Enlightenment Foundation Libraries
+
+EFL Window Manager
