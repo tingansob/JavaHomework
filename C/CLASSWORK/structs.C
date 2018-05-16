@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 int main()
 {
@@ -14,6 +15,7 @@ int main()
         };
 
  int choice , count=0 ;
+ char t;
  employee fullTime[1000];
  employee contractor[1000];
  do{cout<<"\n\nHR Database\n-----------"
@@ -26,7 +28,9 @@ int main()
 	if(choice==1)
 	   {count++;
 	    cout<<"\nEmployee "<<count<<" name? ";
-		cin>> fullTime[count].name;
+        cin.ignore();
+        getline(cin,fullTime[count].name);
+		//cin>> fullTime[count].name;
 		cout<<"\nEmployee "<<count<<" ID ? ";
 		cin>> fullTime[count].id;
 		cout<<"\nEmployee "<<count<<" gender ? ";
@@ -34,22 +38,33 @@ int main()
 		cout<<"\n\nDATABASE UPDATED \n\n";
 	   }
 
-	if(choice==2)
-	   {cout<<"\n\n------------------------------------";
+	if(choice==2) {
+        cout<<"Full Time (f) or Contractors (c) ";
+        cin>>t;
+        if (t=='f') { 
+            cout<<"\n\n--FULL TIME-------------------------";
+            cout<<"\n\nID\tgender\tName\n--\t------\t----";
+            for(int i=1 ; i<=count ; i++)   
+                cout<<"\n"<<fullTime[i].id
+                    <<"\t"<<fullTime[i].gender
+                    <<"\t"<<fullTime[i].name;
+            cout<<"\n\n------------------------------------"; }
+
+        if (t=='c') {
+        cout<<"\n\n--CONTRACTORS----------------------";
 	    cout<<"\n\nID\tgender\tName\n--\t------\t----";
 	    for(int i=1 ; i<=count ; i++)   
-		 cout<<"\n"<<fullTime[i].id
-		     <<"\t"<<fullTime[i].gender
-		     <<"\t"<<fullTime[i].name;
-		 cout<<"\n\n------------------------------------";
+		 cout<<"\n"<<contractor[i].id
+		     <<"\t"<<contractor[i].gender
+		     <<"\t"<<contractor[i].name;
+		 cout<<"\n\n------------------------------------"; }
+
 	   }
 
     if(choice==3)
     {
         cout<<"Transferring all Full Time Employees to contractors. ";
-        for (int i=1;i<=count; i++ ){
-            contractor[i].name = fullTime[i].name;
-            contractor[i].id = fullTime[i].id;
+        for (int i=1;i<=count; i++ ){ contractor[i].name = fullTime[i].name; contractor[i].id = fullTime[i].id;
             contractor[i].gender = fullTime[i].gender;
             cout<<"\nClearing Full Time Records";
             fullTime[i].name = " ";

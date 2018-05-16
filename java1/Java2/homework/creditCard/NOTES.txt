@@ -1,0 +1,10 @@
+
+How do I create a complex card number. An int is too small for a 16 digit number and a I don't need any fractional part for a double. Most credit cards have card numbers broken into a series of 4/5 digit numbers seperated by a space. I know there's some algorhytm that allows for that unique number creation. Any suggestions? I created the app using a small ID number...starting with 1.
+
+modifiers
+ - set name
+ - setMemberPoints
+ - setSpendingLimit
+ - setInterestRate
+
+ increase member points

@@ -1,0 +1,18 @@
+In this programming assignment, the goal is to create a smart shopping cart.  Think of the self-checkout option in many stores these days.
+
+Design a ShoppingCart class that contains Items.  (Use the item class that you already designed!)  This uses composition since there is an array of Item objects inside a ShoppingCart.  Several interesting methods are
+
+
+addItem to insert an item to the cart.  This is a void method since it modifies the state of the array in the ShoppingCart object.  There are different ways to implement this method.  One was is to have a single parameter that is an already constructed Item.  Another way is to have a set of parameters that are the parameters to the constructor of the Item class.
+cartTotal computes the total price of the cart.  This method returns a double but does not need any parameters since it works with data members of the ShoppingCart object.
+cartTaxAmount receives the tax rate and computes the total tax to charge for the items currently in the cart.  Only Taxable items should be considered for this calculation.  This method also returns a double but does not need any parameters since it works with data members of the ShoppingCart object.
+
+For simplicity, you can assume that the capacity of a ShoppingCart is fixed at 10 items.
+
+
+Keep in mind:
+
+
+Each class should have at least one constructor that receives arguments.
+Make data members private and create accessor and mutator methods whenever necessary.
+Each class should have a toString method that you use to display the contents of the class.

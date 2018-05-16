@@ -1,0 +1,13 @@
+Part I:
+
+This is a continuation of the Item class we designed in the last assignment. 
+
+Add a toString method to your Item class.  This method does not accept any parameters and returns a String reflecting the current state of the object.  Once you have written the toString method, the following statement will display the contents of all member variables in an Item object called chair:
+
+System.out.println(chair);
+
+ 
+
+ Part II:
+
+ Create an array of Item objects.  Then write a loop that calculates the total weight of the Items in the array.  Since the weight is a private data member of the Item class, the loop will need to call an accessor method to query the weight of each Item in the array.

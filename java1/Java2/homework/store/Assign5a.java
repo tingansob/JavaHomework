@@ -48,14 +48,64 @@ System.out.println("The table’s profit is now $" + table.profit());
 import java.util.*;
 public class Assign5a {
     public static void main(String[] args){
-//        Item box = new Item("Arm Chair", 19.99, 29.99);
- //       box.setVendor("Marge Carson");
- //       box.increaseCost();
- //       System.out.printf("You've made $%.2f profit.\n",box.profit());
 
-        
-        Item chair = new Item("Desk Chair", 30, 55); 
+        Scanner in = new Scanner(System.in);
+        Util make = new Util();
+        Item[] shopping = new Item[20];
+        Item chair = new Item("Desk Chair","Humanscale", 30, 55); 
+        Item stove = new Item("Convection Oven", "Dupont", 700, 1000);
+        Item fridge = new Item("Stove", "Whirlpool",300, 500);
+        Item fork = new Item("Fork", "Ikea", .19, 2);
+        Item glass = new Item("Glass", "Lalique", 23, 50);
+        Item table = new Item("Picnic Table", "Target", 70, 88);
+        int choice = 1;
+        int num = 0;
+        do {
+            System.out.println("----------------------------");
+            System.out.println("-");
+            System.out.println("-> (1) Add New Item");
+            System.out.println("-> (2) View Item");
+            System.out.println("-> (3) Calculate Profit");
+            System.out.println("-> (4) Estimate Weight");
+            System.out.println("-> (5) View Entire Cart");
+            System.out.println("-> (0) Exit");
+            System.out.println("-");
+            System.out.println("----------------------------");
+            System.out.print("Your Choice => ");
+            choice = in.nextInt();
+            
+            if (choice == 1){
+                shopping[num] = new Item(in);
+                num++; }
+
+            if (choice == 2){ 
+                System.out.println(shopping[num]); }
+
+            if (choice == 3){
+                System.out.println(shopping[num].profit()); }
+
+            if (choice == 4){
+                //System.out.println("Total weight of shipping "+shopping[num]+totalWeight();)
+            }
+                
+            make.space(2);
+        }while (choice != 0);
+        /*
+        Item[] shopping = new Item[7];
+        shopping[0]=chair;
+        shopping[1]=stove;
+        shopping[2]=fridge;
+        shopping[3]=fork;
+        shopping[4]=glass;
+
+
+        int choice = 0;
+
+
+        System.out.print(chair);
+
         System.out.printf("The chair’s profit is now $%.2f\n", chair.profit());
+
 
         //inrease cost price by $3.  chair.increaseCost();
         chair.increaseCost();
@@ -66,17 +116,15 @@ public class Assign5a {
         //set the chair’s weight to 7 lb
 
         chair.setWeight(7);
+        System.out.print(chair);
+        make.space(2);
 
 
-        Item table = new Item("Picnic Table", 70, 88);
+
         
         System.out.printf("The table’s profit is now $%.2f\n", table.profit());
         
 
-        Item stove = new Item("Dupont", 700, 1000);
-        Item fridge = new Item("Whirlpool",300, 500);
-        Item fork = new Item("Ikea", .19, 2);
-        Item glass = new Item("Lalique", 23, 50);
 
 
 
@@ -87,26 +135,15 @@ public class Assign5a {
         System.out.println(fork.getTaxable());
 
         System.out.println(stove.profit());
+        for (int i = 1; i <= 3; i++)
         stove.increaseCost();
-        stove.increaseCost();
-        stove.increaseCost();
+
         System.out.println(stove.profit());
-        System.out.println(stove.grossProfit());
-
-        /*
-        glass.increaseCost();
-        glass.increaseCost();
-        glass.increaseCost();
-        glass.increaseCost();
-        glass.increaseCost();
-
-        glass.increaseCost();
-        glass.profit();
-
-        System.out.println(glass.profit());
-        glass.Profit();
+        System.out.println(glass);
         */
-    }
-}
+
+    } // END main
+
+} // END Class
 
 
